@@ -9,6 +9,12 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Calculadora</title>
+    <style>
+        input{width:70px; height:70px; padding:0px,0px,0px,0px}
+        #row2{height:142px}
+        #col2{width:142px}
+        #screen{width:354px}
+    </style>
 </head>
 <body>
     <div>
@@ -16,10 +22,10 @@
         <!-- esta linha de comentário é visível no 'cliente' -->
         @* mas esta não é... *@
         <form method="post">
-            <table border="1">
+            <table border="1" cellpadding="0" cellspacing="0">
                 <tr>
                     <td colspan="5">
-                        <input type="text" name="display" readonly />
+                        <input type="text" name="display" readonly id="screen" />
                     </td>
                 </tr>
                 <tr>
@@ -70,12 +76,12 @@
                         <input type="submit" value="-" name="bt" />
                     </td>
                     <td rowspan="2">
-                        <input type="submit" value="=" name="bt" />
+                        <input type="submit" value="=" name="bt" id="row2" />
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input type="submit" value="0" name="bt" />
+                        <input type="submit" value="0" name="bt" id="col2"/>
                     </td>
                     <td>
                         <input type="submit" value="," name="bt" />
