@@ -13,7 +13,7 @@
         input{width:70px; height:70px; padding:0px,0px,0px,0px}
         #row2{height:142px}
         #col2{width:142px}
-        #screen{width:354px}
+        #screen{width:354px; font-size:30px; text-align:right;}
     </style>
 </head>
 <body>
@@ -25,7 +25,7 @@
             <table border="1" cellpadding="0" cellspacing="0">
                 <tr>
                     <td colspan="5">
-                        <input type="text" name="display" readonly id="screen" />
+                        <input type="text" name="display" value="@ViewBag.Display" readonly id="screen" />
                     </td>
                 </tr>
                 <tr>
@@ -56,7 +56,7 @@
                         <input type="submit" value="6" name="bt" />
                     </td>
                     <td>
-                        <input type="submit" value="X" name="bt" />
+                        <input type="submit" value="x" name="bt" />
                     </td>
                     <td>
                         <input type="submit" value="C" name="bt" />
